@@ -1,0 +1,102 @@
+/* variables */
+:root{
+    --grass: #38BF4B;
+    --fire: #FF9741;
+    --water: #3692DC;
+    --electric: #f8f32b; 
+    --bug: #a2ce6f;
+    --grass: #6da34d;
+    --poison: #7133a4;
+    --normal: #eee6c5;
+    --ice : #75adde;
+    --rock : #f6a844;
+    --ground: #f6a844;
+    --dark: #555a5f;
+    --fighting: #ee4141;
+}
+
+/* Normalize css*/
+
+figure {
+    margin: 0;
+    display: block;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+
+/* Typographic */
+
+    h1, h2, h3, h4, h5, input { 
+        font-family: 'VT323', monospace;
+    }
+
+
+    p, span {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .electric p, .electric h2, .normal p, .normal h2 {
+        color: #000;
+    }
+
+
+/* Card Colors  */
+
+.item-content {
+    background-color: #c2c2c3;
+    border: 2px solid #000;
+}
+
+
+.grass{
+    background-color: var(--grass);
+}
+
+.fire {
+    background-color: var(--fire);
+}
+
+.water {
+    background-color: var(--water);
+}
+
+.bug {
+    background-color: var(--bug);
+}
+
+.normal {
+    background-color: var(--normal);
+}
+
+.electric {
+    background-color: var(--electric);
+}
+
+.ground, .rock {
+    background-color: var(--ground);
+}
+
+.poison {
+    background-color: var(--poison);
+}
+
+.hada {
+    background-color: var(--hada);
+}
+
+.ice {
+    background-color: var(--ice);
+}
+
+.dark {
+   background-color: var(--dark);
+}
+
+.fighting {
+    background-color: var(--fighting);
+ }

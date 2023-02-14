@@ -7,6 +7,63 @@
     <title>PokeApi</title>
 </head>
 <body>
-    
+    <div class="" style="text-align: center;">
+        <h1 style="text-align: center; font-family: sans-serif; font-size: 1rem; margin-top: 2rem; margin-bottom: 4rem;">Mis pokemones favoritos</h1>
+        
+        <div style="text-align: center;">
+
+            <div class="item-wrap" style="margin: auto;">
+                <div style="width: 100%; " class="item-card">
+                    <div class="item-content">
+
+                    </div>
+                </div>
+                <div style="width: 50%; " class="item-card">
+                    <div class="item-content">
+
+                    </div>
+                </div>
+                <div style="width: 50%; " class="item-card">
+                    <div class="item-content">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <a href="./pokemon-list.html"> Ver lista de Pokemons</a>
+        </div>
+        
+    </div>
+   
+
+    <script src="./js/main.js"></script> 
 </body>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .item-wrap{
+        display: flex; 
+        flex-wrap: wrap; 
+        margin: auto;
+        max-width: 560px; 
+        margin: auto;
+    }
+
+    .item-card{
+        padding: .45rem;
+        
+    }
+
+    .item-content{
+        background-color: aliceblue;
+         width: 100%;
+         min-height: 100px;
+         
+        border-radius: .75rem;
+    }
+</style>
 </html>
