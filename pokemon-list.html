@@ -14,23 +14,31 @@
         rel="stylesheet">
 </head>
 
-<body class="mb-16">
-    <div class="" style="text-align: center;">
+<body class="mb-16 flex items-center justify-center">
+    <div class="max-w-lg" style="text-align: center;">
 
 
         <!-- SearchBox-->
-        <div class="bg-blue-400 pt-4 pb-2 px-4">
-            <h1 class="text-white upercase text-4xl mb-4 text-start">Lista de Pokemones</h1>
+        <div class="bg-blue-400 pt-4 pb-6 px-4">
+            <div class="flex  mb-4 ">
+                <h1 class="text-white upercase text-3xl text-start flex-1">Lista de Pokemones</h1>
+                <button c>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                      </svg>
+                      
+                </button>
+            </div>
+            
             <div>
-                <form method="post">
-                    <input type="text" class="rounded-md h-10 w-full pl-4 text-lg" placeholder="Buscar Pokemon" id="searchbox">
-                    <button type="submit"></button>
-                </form>
+                <input type="text" class="rounded-md h-10 w-full pl-4 text-lg" placeholder="Buscar Pokemon" id="searchbox">
             </div>
         </div>
 
 
-
+        <div class="my-8" id="emptySpace" style="display: none;"> 
+            <h2 class="text-xl">Pokemon no encontrado :C</h2> 
+        </div>
       
         <div class="item-wrap px-4 py-6 space-y-4" id="item_wrap">
         </div>

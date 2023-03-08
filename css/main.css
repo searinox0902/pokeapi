@@ -100,3 +100,26 @@ img {
 .fighting {
     background-color: var(--fighting);
  }
+
+
+ .btnFavoriteWrap button {
+    display: none;
+ }
+
+ .btnFavoriteWrap.false #addFavorite{
+    display: block;
+ }  
+
+
+ .btnFavoriteWrap.false #removeFavorite{
+    display: none;
+ }  
+
+ .btnFavoriteWrap.true #addFavorite{
+    display: none;
+ }  
+
+ .btnFavoriteWrap.true #removeFavorite{
+    display: block;
+ }  
+
