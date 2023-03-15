@@ -1,69 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PokeApi</title>
+    <title>Pokemon Api</title>
+    <link rel=stylesheet HREF="css/main.css" type="text/css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=VT323&display=swap"
+        rel="stylesheet">
 </head>
-<body>
-    <div class="" style="text-align: center;">
-        <h1 style="text-align: center; font-family: sans-serif; font-size: 1rem; margin-top: 2rem; margin-bottom: 4rem;">Mis pokemones favoritos</h1>
-        
-        <div style="text-align: center;">
 
-            <div class="item-wrap" style="margin: auto;">
-                <div style="width: 100%; " class="item-card">
-                    <div class="item-content">
-
-                    </div>
-                </div>
-                <div style="width: 50%; " class="item-card">
-                    <div class="item-content">
-
-                    </div>
-                </div>
-                <div style="width: 50%; " class="item-card">
-                    <div class="item-content">
-
-                    </div>
-                </div>
-            </div>
+<body class="flex items-center justify-center relative">
+    <div class="max-w-lg w-full relative min-h-screen mb-32">
+        <div class="bg-red-600 pt-8 pb-8 mb-6 px-6 classAleatory">
+            <h1 class=" text-black text-start upercase text-3xl flex-1 text-white">POKEDEX</h1>
+            <p class="text-white text-xs">Creado por : Sebastian Vargas Quintana</p>
         </div>
 
-        <div>
-            <a href="./pokemon-list.html"> Ver lista de Pokemons</a>
+        <p class="my-4 font_vt323 text-2xl text-center">Mis pokemones favoritos:</p>
+
+        <div id="emptySpace" class="hidden">
+            <p class="text-center font_vt323 text-xl mb-4">No tienes Pokemones Favoritos :c</p>
         </div>
-        
+
+
+        <div id="favoritesWrap" class="item-wrap hidden flex flex-wrap justify-between column px-3" style="margin: auto;">
+            
+        </div>
+
+
+      
+
     </div>
-   
 
-    <script src="./js/main.js"></script> 
+
+
+    <div class="h-auto max-w-lg px-8 pb-4   fixed bottom-0 left-0 right-0 m-auto text-center">
+        <div class="w-full h-16 bg-white shadow-lg border border-gray-200 rounded-full flex items-center justify-center">
+            <a href="pokemon-list.html" class="flex gap-2 h-full justify-center items-center px-6">
+               
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                  </svg>   
+                  Ir a la Pokedex               
+            </a>
+        </div>
+    </div>
+
+    <div id="pokeLigthBox" class="flex justify-center py-6 px-4 hidden">
+
+    </div>
+
+
+    <script src="./js/index.js"></script>
 </body>
 <style>
     * {
         box-sizing: border-box;
     }
-
-    .item-wrap{
-        display: flex; 
-        flex-wrap: wrap; 
-        margin: auto;
-        max-width: 560px; 
-        margin: auto;
-    }
-
-    .item-card{
-        padding: .45rem;
-        
-    }
-
-    .item-content{
-        background-color: aliceblue;
-         width: 100%;
-         min-height: 100px;
-         
-        border-radius: .75rem;
-    }
 </style>
+
 </html>

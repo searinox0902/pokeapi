@@ -35,6 +35,10 @@ img {
         font-family: 'VT323', monospace;
     }
 
+    .font_vt323{
+        font-family: 'VT323', monospace;
+    }
+
 
     p, span {
         font-family: 'Roboto', sans-serif;
@@ -47,9 +51,13 @@ img {
 
 /* Card Colors  */
 
+
 .item-content {
     background-color: #c2c2c3;
-    border: 2px solid #000;
+   /* background-image: url('../img/pokemon_bg.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 20%; */
 }
 
 
@@ -101,25 +109,46 @@ img {
     background-color: var(--fighting);
  }
 
-
- .btnFavoriteWrap button {
-    display: none;
+ .btnFavoriteWrap button *{
+    transition:  all .4s ease-in-out;
  }
 
- .btnFavoriteWrap.false #addFavorite{
-    display: block;
- }  
+.btnFavoriteWrap button.true svg {
+    fill: red;
+}  
 
 
- .btnFavoriteWrap.false #removeFavorite{
-    display: none;
- }  
 
- .btnFavoriteWrap.true #addFavorite{
-    display: none;
- }  
+#favoritesWrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1;
+    gap: .75rem
+}
 
- .btnFavoriteWrap.true #removeFavorite{
-    display: block;
- }  
+#favoritesWrap .item-card {
+    min-height: 120px;
+}
+
+#favoritesWrap.item-wrap > :first-child{
+    grid-column: 1 / 3;
+}
+
+#favoritesWrap.item-wrap .item-content__img {
+     max-width: 120px;
+}
+
+
+/* PokeLigthBox */
+
+#pokeLigthBox {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: #0000007c;
+}
 
